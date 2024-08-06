@@ -4,9 +4,9 @@ let rect_height = 20;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -25,25 +25,25 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  noStroke()
   //tail
 let tailSize = 50;
-fill(143, 161, 189)
+fill(186, 157, 199)
 ellipse(110,165,tailSize,tailSize)
 
 //flipper 1
-fill(119, 133, 153)
+fill(161, 135, 173)
 push()
 rotate(10)
 ellipse(95,90,20,40)
 pop()
 
 //body
-fill(143, 161, 189)
+fill(186, 157, 199)
 push()
 rotate(-10)
 ellipse(100,110,80,130)
 pop()
 
 //mouth
-fill(119, 133, 153)
+fill(161, 135, 173)
 ellipse(94,70,45,35)
 
 //eyes
@@ -55,9 +55,9 @@ fill(0, 0, 0)
 ellipse(93.5,45,6,6)
 ellipse(108.5,45,6,6)
 
-// // //eyelids
-// // fill(143, 161, 189)
-// // ellipse(104,41,32,5)
+//eyelids
+// fill(143, 161, 189)
+// ellipse(104,41,32,5)
 
 //fishes
 let fish1 = 40;
@@ -83,7 +83,7 @@ fill(0,0,0)
 ellipse(fish1+9,160,3,3)
 
 
-fill(237, 240, 53)
+fill(225, 237, 114)
 triangle(160, 30, 
     180, 20, 
     180, 40);
@@ -97,12 +97,12 @@ fill(0,0,0)
 ellipse(151,30,3,3)
 
 //flipper 2
-fill(119, 133, 153)
+fill(161, 135, 173)
 ellipse(122,105,20,40)
 
 //nostrils
 let noseSize = 4;
-fill(91, 102, 117)
+fill(121, 103, 130)
 ellipse(82,65,noseSize,noseSize)
 ellipse(102,65,noseSize,noseSize)
 
